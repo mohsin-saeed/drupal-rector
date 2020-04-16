@@ -54,6 +54,11 @@
     - file_prepare_directory_updated.php
     - FilePrepareDirectoryStatic.php
     - FilePrepareDirectoryStaticUpdated.php
+'file_scan_directory()':
+  Rector: FileScanDirectoryRector.php
+  PHPStan: 'Call to deprecated function file_scan_directory(). Deprecated in drupal:8.8.0 and is removed from drupal:9.0.0. Use Drupal​\​Core​\​File​\​FileSystemInterface::scanDirectory() instead.'
+  Examples:
+    - file_scan_directory.php
 'BrowserTestBase::getMock()':
   Rector: BrowserTestBaseGetMock.php
   PHPStan: 'Call to deprecated method getMock() of class Drupal\Tests\UnitTestCase. Deprecated in drupal:8.5.0 and is removed from drupal:9.0.0. Use Drupal\Tests\PhpunitCompatibilityTrait::createMock() instead.'
